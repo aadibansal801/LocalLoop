@@ -1,0 +1,34 @@
+:root {
+    color-scheme: light;
+    font: 100%/1.5 system-ui, sans-serif;
+    color: #17252a;
+    background: #eef3f1;
+}
+
+body { margin: 0; padding: clamp(1rem, 8vh, 5rem) 1rem; }
+main {
+    box-sizing: border-box;
+    max-width: 30rem;
+    margin: auto;
+    padding: clamp(1.25rem, 5vw, 2.5rem);
+    border: 1px solid #cedbd6;
+    border-radius: 1rem;
+    background: white;
+}
+
+h1 { font-size: clamp(1.65rem, 5vw, 2.25rem); line-height: 1.15; margin: 0 0 1rem; }
+.brand { color: #285c51; font-weight: 700; margin: 0 0 .5rem; }
+form { display: grid; gap: .55rem; }
+label, dt { font-weight: 650; }
+input, button { box-sizing: border-box; font: inherit; border-radius: .5rem; padding: .65rem .85rem; }
+input { min-width: 0; border: 1px solid #788d85; }
+input + label { margin-top: .4rem; }
+button { margin-top: .5rem; border: 1px solid #164a3d; background: #164a3d; color: white; cursor: pointer; }
+a { color: #185849; text-underline-offset: .2em; }
+:focus-visible { outline: 3px solid #216ab0; outline-offset: 2px; }
+nav { display: flex; gap: .65rem 1rem; flex-wrap: wrap; margin-top: 1rem; }
+dd { margin: 0 0 .6rem; overflow-wrap: anywhere; }
+.hint { margin: 0; font-size: .9rem; color: #42564e; }
+.notice, .error { padding: .65rem .85rem; border-radius: .5rem; }
+.notice { background: #e4f2e8; }
+.error { background: #fae9e6; color: #752617; }

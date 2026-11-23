@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{layout :: layout('Dashboard', ~{::section})}">
+<section>
+    <p th:text="|Welcome, ${displayName}.|">Welcome.</p>
+    <dl>
+        <dt>Email</dt>
+        <dd th:text="${email}"></dd>
+        <dt>Role</dt>
+        <dd th:text="${role}"></dd>
+    </dl>
+    <form method="post" th:action="@{/logout}">
+        <button type="submit">Sign out</button>
+    </form>
+</section>
+</html>
